@@ -1,0 +1,16 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face { font-family: Gilroy-ExtraBold; 
+    src: url('/src/fonts/Gilroy-ExtraBold.otf'); } 
+
+@font-face { font-family: Gilroy-Light; 
+    src: url('/src/fonts/Gilroy-Light.otf'); } 
+
+h2{
+font-family: Gilroy-ExtraBold;
+font-size: 300px;
+}
