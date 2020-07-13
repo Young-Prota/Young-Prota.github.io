@@ -15,10 +15,15 @@ module.exports = {
           }
         },
         spacing: {
+          '35' : '9rem',
+          '28' : '7rem',
           '72': '18rem',
-          '84': '21rem',
+          '84': '27rem',
           '96': '29rem',
-        }
+        },
+        screens: {
+          'iphone': '414px',
+        },
       }
     }
   };
