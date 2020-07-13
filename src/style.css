@@ -10,7 +10,10 @@
 @font-face { font-family: Gilroy-Light; 
     src: url('/src/fonts/Gilroy-Light.otf'); } 
 
-h2{
+#gilroybold{
 font-family: Gilroy-ExtraBold;
-font-size: 300px;
+}
+
+#gilroylight {
+    font-family: Gilroy-Light;
 }
