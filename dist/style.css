@@ -595,9 +595,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 414px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 414px;
+    max-width: 320px;
   }
 }
 
@@ -8032,7 +8032,7 @@ video {
 }
 
 .max-w-screen-iphone {
-  max-width: 414px;
+  max-width: 320px;
 }
 
 .min-h-0 {
@@ -26244,7 +26244,7 @@ video {
   }
 
   .sm\:max-w-screen-iphone {
-    max-width: 414px;
+    max-width: 320px;
   }
 
   .sm\:min-h-0 {
@@ -44439,7 +44439,7 @@ video {
   }
 
   .md\:max-w-screen-iphone {
-    max-width: 414px;
+    max-width: 320px;
   }
 
   .md\:min-h-0 {
@@ -62634,7 +62634,7 @@ video {
   }
 
   .lg\:max-w-screen-iphone {
-    max-width: 414px;
+    max-width: 320px;
   }
 
   .lg\:min-h-0 {
@@ -80829,7 +80829,7 @@ video {
   }
 
   .xl\:max-w-screen-iphone {
-    max-width: 414px;
+    max-width: 320px;
   }
 
   .xl\:min-h-0 {
@@ -91616,7 +91616,7 @@ video {
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 320px) {
   .iphone\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -99024,7 +99024,7 @@ video {
   }
 
   .iphone\:max-w-screen-iphone {
-    max-width: 414px;
+    max-width: 320px;
   }
 
   .iphone\:min-h-0 {
