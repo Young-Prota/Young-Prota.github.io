@@ -21,9 +21,6 @@ module.exports = {
           '84': '27rem',
           '96': '29rem',
         },
-        screens: {
-          'iphone': '414px',
-        },
       }
     }
   };
