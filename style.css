@@ -1,0 +1,115 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face { font-family: Gilroy-ExtraBold; 
+    src: url('/src/fonts/Gilroy-ExtraBold.otf'); } 
+
+@font-face { font-family: Gilroy-Light; 
+    src: url('/src/fonts/Gilroy-Light.otf'); } 
+
+#gilroybold{
+font-family: Gilroy-ExtraBold;
+}
+
+#gilroylight {
+    font-family: Gilroy-Light;
+}
+
+
+.flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.45, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.45, 1.2) infinite;
+}
+
+@-webkit-keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+#carrousel {
+    font-size: 36px;
+    font-weight: 100;
+}
+#carrousel div {
+    overflow: hidden;
+    position: relative;
+    float: none;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: -10px;
+    font-family: Gilroy-Light;
+    color: #ffffff;
+}
+#carrousel div li {
+    font-family: Gilroy-ExtraBold;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    padding-right: -20px;
+    display: block;
+}

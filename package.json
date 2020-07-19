@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwind build src/style.css -o dist/style.css",
-    "build:portfolio": "tailwind build src/portfolio.css -o dist/portfolio.css"
+    "build:portfolio": "tailwind build src/portfolio.css -o dist/portfolio.css",
+    "build:special": "tailwind build src/specialization.css -o dist/specialization.css"
   },
   "repository": {
     "type": "git",
