@@ -14,44 +14,49 @@ function loopSlider(){
 var xx= setInterval(function(){
       switch(cont)
       {
+        
       case 0:{
-          $("#slider-1").fadeOut(400);
-          $("#slider-3").fadeOut(400);
-          $("#slider-2").delay(400).fadeIn(400);
-          $("#sButton1").removeClass("bg-purple-800");
-          $("#sButton2").addClass("bg-purple-800");
-      cont=1;
+          cont=1;
+          if (cont == 1){
+            $("#slider-1").fadeOut(400);
+            $("#slider-3").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+          }
       
       break;
       }
-      case 1:
-      {
-      
-          $("#slider-2").fadeOut(400);
-          $("#slider-3").fadeOut(400);
-          $("#slider-1").delay(400).fadeIn(400);
-          $("#sButton2").removeClass("bg-purple-800");
-          $("#sButton1").addClass("bg-purple-800");
-         
-      cont=0;
+
+
+      case 1:{
+        cont=2;
+          if (cont == 2){
+            $("#slider-2").fadeOut(400);
+            $("#slider-3").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+          }
       
       break;
       }
       
-      case 2:
-      {
+      case 2:{
+        cont=3;
+          if (cont == 3){
           $("#slider-1").fadeOut(400);
           $("#slider-2").fadeOut(400);
           $("#slider-3").delay(400).fadeIn(400);
           $("#sButton2").removeClass("bg-purple-800");
           $("#sButton1").addClass("bg-purple-800");
-         
-      cont=0;
+          }
+        cont=0;
       
       break;
       }
       
-      }},8000);
+      }},3000);
 
 }
 
@@ -65,46 +70,45 @@ setTimeout(loopSlider(),time);
 function sliderButton1(){
 
   $("#slider-2").fadeOut(400);
+  $("#slider-3").fadeOut(400);
   $("#slider-1").delay(400).fadeIn(400);
   $("#sButton2").removeClass("bg-purple-800");
   $("#sButton1").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=0
+  cont=1;
   
   }
   
   function sliderButton2(){
   $("#slider-1").fadeOut(400);
+  $("#slider-3").fadeOut(400);
   $("#slider-2").delay(400).fadeIn(400);
   $("#sButton1").removeClass("bg-purple-800");
   $("#sButton2").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=1
+  cont=0;
   
   }
 
   function sliderButton3(){
   $("#slider-2").fadeOut(400);
+  $("#slider-1").fadeOut(400);
   $("#slider-3").delay(400).fadeIn(400);
   $("#sButton1").removeClass("bg-purple-800");
-  $("#sButton2").addClass("bg-purple-800");
+  $("#sButton2").removeClass("bg-purple-800");
+  $("#sButton3").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=2
+  cont=1;
   
   }
 
   $(window).ready(function(){
       $("#slider-2").hide();
+      $("#slider-3").hide();
       $("#sButton1").addClass("bg-purple-800");
-      
 
       loopSlider();
-   
-      
-  
-  
-  
-  
+
   });
 
 
@@ -133,7 +137,7 @@ function sliderButton1(){
 
             <div id="slider-1" class="container mx-auto">
               
-              <div class="bg-cover bg-center  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only2.png)">
+              <div class="bg-cover bg-center  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only.png)">
  
           </div> <!-- container -->
             <br>
@@ -141,7 +145,7 @@ function sliderButton1(){
 
             <div id="slider-2" class="container mx-auto">
             
-                <div class="bg-cover bg-top  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only.png)">
+                <div class="bg-cover bg-top  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only2.png)">
         
                 </div> <!-- container -->
                   <br>
@@ -150,7 +154,7 @@ function sliderButton1(){
 
             <div id="slider-3" class="container mx-auto">
             
-              <div class="bg-cover bg-top  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only.png)">
+              <div class="bg-cover bg-top  h-auto text-white py-56 px-72" style="background-image: url(src/assets/Only3.png)">
       
               </div> <!-- container -->
                 <br>
@@ -158,10 +162,10 @@ function sliderButton1(){
 
 
           </div>
-       <div  class="flex justify-between w-12 mx-auto pb-2">
+       <div  class="w-24 mx-auto pb-8 py-16 flex justify-end">
               <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
               <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
-              <button id="sButton3" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+              <button id="sButton3" onclick="sliderButton3() " class="bg-purple-400 rounded-full w-4 p-2"></button>
         </div>
 
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
