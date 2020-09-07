@@ -46,7 +46,7 @@ var xx= setInterval(function(){
           $("#sButton2").removeClass("bg-purple-800");
           $("#sButton1").addClass("bg-purple-800");
          
-      cont=0;
+      cont=1;
       
       break;
       }
@@ -65,36 +65,40 @@ setTimeout(loopSlider(),time);
 function sliderButton1(){
 
   $("#slider-2").fadeOut(400);
+  $("#slider-3").fadeOut(400);
   $("#slider-1").delay(400).fadeIn(400);
   $("#sButton2").removeClass("bg-purple-800");
   $("#sButton1").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=0
+  cont=0;
   
   }
   
   function sliderButton2(){
   $("#slider-1").fadeOut(400);
+  $("#slider-3").fadeOut(400);
   $("#slider-2").delay(400).fadeIn(400);
   $("#sButton1").removeClass("bg-purple-800");
   $("#sButton2").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=1
+  cont=1;
   
   }
 
   function sliderButton3(){
   $("#slider-2").fadeOut(400);
+  $("#slider-1").fadeOut(400);
   $("#slider-3").delay(400).fadeIn(400);
   $("#sButton1").removeClass("bg-purple-800");
   $("#sButton2").addClass("bg-purple-800");
   reinitLoop(4000);
-  cont=2
+  cont=2;
   
   }
 
   $(window).ready(function(){
       $("#slider-2").hide();
+      $("#slider-3").hide();
       $("#sButton1").addClass("bg-purple-800");
       
 
@@ -160,10 +164,10 @@ function sliderButton1(){
           </div>
 
           </div>
-       <div  class="flex justify-between w-12 mx-auto pb-2">
+       <div  class="w-24 mx-auto pb-8 py-16 flex justify-end">
               <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 " ></button>
               <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
-              <button id="sButton3" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+              <button id="sButton3" onclick="sliderButton3() " class="bg-purple-400 rounded-full w-4 p-2"></button>
         </div>
 
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
