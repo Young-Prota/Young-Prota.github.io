@@ -5,11 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        purple: {
-          ...colors.purple,
-          'custom-base': '#5E2F74',
-          'custom-darker': '#432252',
-        },
+        transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.coolGray,
+      red: colors.red,
+      yellow: colors.amber,
+      blue: colors.blue,
       },
     },
     
